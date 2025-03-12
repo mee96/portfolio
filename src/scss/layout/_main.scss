@@ -1,3 +1,14 @@
 .title{
-    color: $backgroundcolor;
+    color: $color6;
+}
+.dark{
+    background-color: $color1;
+    color: $color3;
+    height: 100vh;
+}
+
+.light{
+    background-color: $color3;
+    color: $color1;
+    height: 100vh;
 }
