@@ -1,6 +1,7 @@
 import "../scss/App.scss";
 import Header from "./Header";
 import SobreMi from "./SobreMi";
+import Home from "./Home";
 import { useState } from "react";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <main>
 
             <button onClick={handleClick} >darkmode</button>
+            <Home />
             <SobreMi/>
 
         </main>
