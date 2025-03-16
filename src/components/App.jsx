@@ -1,6 +1,9 @@
 import "../scss/App.scss";
 import Header from "./Header";
 import SobreMi from "./SobreMi";
+import Proyectos from "./Proyectos";
+import Formacion from "./Formacion";
+import Contacto from "./Contacto"
 import Home from "./Home";
 import { useState } from "react";
 
@@ -26,6 +29,9 @@ function App() {
             <button onClick={handleClick} >darkmode</button>
             <Home />
             <SobreMi/>
+            <Proyectos/>
+            <Formacion/>
+            <Contacto/>
 
         </main>
         </div>

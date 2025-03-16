@@ -15,9 +15,13 @@ function Header() {
           <li><Link to="sobre-mi" smooth={true} duration={500}>
               Sobre Mí
             </Link></li>
-          <li>Projectes</li>
-          <li>Formacio</li>
-          <li>Contacte</li>
+          <li><Link to="proyectos" smooth={true} duration={500}>
+              Proyectos
+            </Link></li>
+          <li><Link to="formacion" smooth={true} duration={500}>
+              
+            Formación</Link></li>
+          <li><Link to="contacto" smooth={true} duration={500}> Contacto </Link></li>
         </ul>
         </nav>
     </header>
