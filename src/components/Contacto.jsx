@@ -1,13 +1,51 @@
-import { Element } from 'react-scroll';
+import React, { useRef } from "react";
+import "../scss/layout/Contacto.scss";
+import emailjs from "emailjs-com";
+import { Element } from "react-scroll";
 
-function Contacto() {
+const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+                 //FALTA REGISTRE PER A QUE M'ENVIÏ EL CORREU!!!!!!!!
+    emailjs
+      .sendForm(
+        "your_service_id", // Substitueix amb el teu Service ID
+        "your_template_id", // Substitueix amb el teu Template ID
+        form.current,
+        "your_user_id" // Substitueix amb el teu User ID
+      )
+      .then(
+        (result) => {
+          alert("Missatge enviat amb èxit!");
+        },
+        (error) => {
+          alert("Hi ha hagut un error, torna-ho a intentar.");
+        }
+      );
+
+    e.target.reset(); // Neteja el formulari després d'enviar-lo
+  };
+
   return (
+    <>
+      <Element name="contacto" />
+      
+      <div className="contact">
+      <h2>Contacto</h2>
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
+          <label>Nom</label>
+          <input type="text" name="name" placeholder="El teu nom" required />
+          <label>Email</label>
+          <input type="email" name="email" placeholder="El teu correu" required />
+          <label>Missatge</label>
+          <textarea name="message" placeholder="El teu missatge" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </>
+  );
+};
 
-    <Element name="contacto">
-        <h1>contacto</h1>
-        <p>Yo trabajo al día 12 horas 40 minutos, a fin de cuentas, cuanto más sepáis de todo mejor. Por saber muchísimo no os va a pasar nada malo... luego ya veremos... Si uno es ingeniero o futbolista se le abren todas las puertas del mundoy si no puedo bajar los gastos y no puedo subir los ingresos me puede explicar usted cómo se reduce el déficit público? Porque yo confieso que lo desconozco, así pues, ¿Qué se cree usted? ¿Que todos los políticos de mi partido venimos de la pata del Cid? La democracia no la ha inventado usted ¿vale?, dije que bajaría los impuestos y los estoy subiendo.</p>
-    </Element>
-  )
-}
-
-export default Contacto
+export default ContactForm;
