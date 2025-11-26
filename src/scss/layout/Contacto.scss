@@ -1,8 +1,47 @@
-.contact{
-padding: 150px;
+@import '../core/variables';
 
-    &__form{ 
+.contact{
+    margin-left: 50px;
+}
+
+.contact__form {
     display: flex;
-    flex-direction: column; 
-}
-}
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 50px;
+  }
+  
+  .form__label {
+    font-weight: bold;
+  }
+  
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid $color5;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form__textarea {
+    resize: vertical; 
+    
+  }
+  
+  .send-button {
+    align-self: flex-end; 
+    padding: 0.5rem 1rem;
+    background-color: $color1;
+    color: $color3;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: $color6;
+  }
+  

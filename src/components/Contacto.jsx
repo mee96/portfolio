@@ -18,10 +18,10 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          alert("Missatge enviat amb èxit!");
+          alert("Mensaje enviado con éxito!");
         },
         (error) => {
-          alert("Hi ha hagut un error, torna-ho a intentar.");
+          alert("Ha habido un error, vuelve a intentarlo.");
         }
       );
 
@@ -36,12 +36,12 @@ const ContactForm = () => {
       <h2>Contacto</h2>
         <form ref={form} onSubmit={sendEmail} className="contact__form">
           <label>Nom</label>
-          <input type="text" name="name" placeholder="El teu nom" required />
+          <input type="text" name="name" placeholder="Tu nombre" required />
           <label>Email</label>
-          <input type="email" name="email" placeholder="El teu correu" required />
-          <label>Missatge</label>
-          <textarea name="message" placeholder="El teu missatge" required />
-          <button type="submit">Enviar</button>
+          <input type="email" name="email" placeholder="Tu correo" required />
+          <label>Mensaje</label>
+          <textarea name="message" placeholder="Tu mensaje" required />
+          <button className="button" type="submit">Enviar</button>
         </form>
       </div>
     </>

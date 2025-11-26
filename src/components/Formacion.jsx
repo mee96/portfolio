@@ -7,7 +7,7 @@ import logo from "../images/Logo-adalab.png";
 
 function Formacion() {
   return (
-    <Element name="formacion" className='formacion'>+
+    <Element name="formacion" className='formacion'>
     
     <h1>Formacion</h1>
     <div className='formacion__div'>
