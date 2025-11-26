@@ -8,15 +8,14 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-                 //FALTA REGISTRE PER A QUE M'ENVIÏ EL CORREU!!!!!!!! 
     emailjs
-      .sendForm(
-        "IUoucQHvxE-yOVvhp", // Substitueix amb el teu Service ID
-        "template_h87vyeu", // Substitueix amb el teu Template ID
-        form.current,
-        "service_glru0e4" // Substitueix amb el teu User ID
-      )
-      .then(
+    .sendForm(
+      "service_glru0e4",    // 1r PARÀMETRE: Service ID
+      "template_h87vyeu",   // 2n PARÀMETRE: Template ID
+      form.current,         // 3r PARÀMETRE: Element del Formulari
+      "IUoucQHvxE-yOVvhp"   // 4t PARÀMETRE: User ID (Public Key)
+    )
+    .then(
         (result) => {
           alert("Mensaje enviado con éxito!");
         },
