@@ -1,4 +1,5 @@
-import '../scss/components/Darkmode.scss';
+import '../scss/layout/DarkmodeT.scss';
+
 
 const DarkmodeT = ({ onClick }) => {
   return (
