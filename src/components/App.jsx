@@ -1,10 +1,12 @@
 import "../scss/App.scss";
+
 import Header from "./Header";
 import SobreMi from "./SobreMi";
 import Proyectos from "./Proyectos";
 import Formacion from "./Formacion";
 import Contacto from "./Contacto"
 import Home from "./Home";
+import DarkmodeT from "./DarkmodeT";
 import { useState } from "react";
 
 function App() {
@@ -22,11 +24,12 @@ function App() {
     return (
         <> 
         <Header />
+        <DarkmodeT onClick={handleClick}/>
         <div className={classMode}> 
        
         <main>
 
-            <button onClick={handleClick} >darkmode</button>
+            
             <Home />
             <SobreMi/>
             <Proyectos/>
