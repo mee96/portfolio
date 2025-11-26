@@ -8,13 +8,13 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-                 //FALTA REGISTRE PER A QUE M'ENVIÏ EL CORREU!!!!!!!!
+                 //FALTA REGISTRE PER A QUE M'ENVIÏ EL CORREU!!!!!!!! 
     emailjs
       .sendForm(
-        "your_service_id", // Substitueix amb el teu Service ID
-        "your_template_id", // Substitueix amb el teu Template ID
+        "IUoucQHvxE-yOVvhp", // Substitueix amb el teu Service ID
+        "template_h87vyeu", // Substitueix amb el teu Template ID
         form.current,
-        "your_user_id" // Substitueix amb el teu User ID
+        "service_glru0e4" // Substitueix amb el teu User ID
       )
       .then(
         (result) => {
