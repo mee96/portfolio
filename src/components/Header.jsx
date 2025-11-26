@@ -3,6 +3,7 @@ import "../scss/layout/Header.scss";
 import { Link } from 'react-scroll';
 
 
+
 function Header() {
   return (
     <header className="header">
@@ -22,6 +23,12 @@ function Header() {
               
             Formación</Link></li>
           <li><Link to="contacto" smooth={true} duration={500}> Contacto </Link></li>
+          <li className="header__mode-toggle">
+                        <button onClick={onModeToggle} className="mode-toggle-btn">
+                            <i className={iconClass}></i>
+                        </button>
+                    </li>
+          
         </ul>
         </nav>
     </header>

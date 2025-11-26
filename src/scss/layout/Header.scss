@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: $color5;
+    background-color: inherit;
     font-family: $fontText2;
     height: 100px;
     padding-left: 22px;
@@ -24,7 +24,30 @@
             padding: 10px;
         }
     }
+    &__mode-toggle {
+        /* Estil per al contenidor de la icona (el <li>) */
+        list-style: none; /* Assegurar que no tingui punts de llista */
+        margin-left: 15px;
+    }
+.mode-toggle-btn {
+    /* Estil per a l'element <button> */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem; /* Mida de la icona */
+    padding: 5px;
+    color: inherit; /* Heredar el color del text del header per alinear-se */
+    transition: color 0.3s ease;
 
+    &:hover {
+        color: $color4; 
+    }
+}
+
+/* Opcional: Ajustar el color de la icona en mode fosc */
+.dark .mode-toggle-btn {
+    color: $color3; 
+}
    
 }
 

@@ -6,7 +6,7 @@ import Proyectos from "./Proyectos";
 import Formacion from "./Formacion";
 import Contacto from "./Contacto"
 import Home from "./Home";
-import DarkmodeT from "./DarkmodeT";
+
 import { useState } from "react";
 function App() {
   const [mode, setMode] = useState(true); // true = light, false = dark
@@ -24,7 +24,7 @@ function App() {
         <Proyectos/>
         <Formacion/>
         <Contacto/>
-        <DarkmodeT onClick={handleClick} />
+        
       </main>
     </div>
   );
