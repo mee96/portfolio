@@ -25,8 +25,8 @@ El projecte ha estat dissenyat amb un enfocament en la **simplicitat** i la **re
 
 Si t'agrada el meu treball o vols col·laborar, contacta'm:
 
-* **LinkedIn:** [[Link al teu perfil de LinkedIn](https://www.linkedin.com/in/carme-medina-canalda-250457132/)]
-* **Correu electrònic:** [[El teu correu electrònic](dev.mee96@gmail.com)]
+* **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/carme-medina-canalda-250457132/)]
+* **Correu electrònic:** dev.mee96@gmail.com)
 
 ---
 
