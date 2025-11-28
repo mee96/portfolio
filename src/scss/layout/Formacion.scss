@@ -1,13 +1,88 @@
-.formacion{
-    padding: 150px;
+// src/scss/layout/Formacion.scss
 
-    &__div{
+// 🚨 Recorda importar les variables
+@use '../core/variables' as v; 
+
+.formacion {
+    padding: 60px 20px;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: v.$color1; // Color fosc per als títols
+    }
+
+    &__div {
         display: flex;
-        gap: 15px;
-        margin-top: 15px;
+        flex-direction: row; // Disposició en fila per defecte
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid v.$color3; 
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    &__detalls {
+        flex: 3; // Ocupa més espai
+        h2 {
+            color: v.$color2;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .formacion__institucio {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .formacion__durada {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: gray;
+        }
+    }
+
+    &__logo-container {
+        flex: 1; // Ocupa menys espai
+        text-align: center;
     }
     
+    &__logo {
+        max-width: 150px;
+        height: auto;
+        opacity: 0.8;
+    }
+    
+    // Estils de les etiquetes de tecnologia (reutilitza si ja les tenies)
+    &__tecnologies-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .tech-tag {
+        background-color: v.$color6; 
+        color: v.$color1; 
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
 
-
+// 📱 Adaptació a Mòbil
+@media (max-width: 768px) {
+    .formacion__div {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+    .formacion__logo-container {
+        order: -1; 
+        margin-bottom: 20px;
+    }
+}
 

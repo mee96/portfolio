@@ -1,12 +1,12 @@
-import '../scss/layout/DarkmodeT.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import "../scss/layout/DarkmodeT.scss";
 
 const DarkmodeT = ({ onClick }) => {
   return (
-    
-    <button onClick={onClick} className="fixed-toggle">
-      🌓
-    </button>
+    <span className="fixed-toggle" onClick={onClick}>
+      <FontAwesomeIcon icon={faMoon} />
+    </span>
   );
 };
 

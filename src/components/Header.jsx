@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
         
         <img className="header__logo" src={logoPortf} alt="imagen pusheen" />
-        <h1>mee96</h1>
+        <h1>Carme Medina</h1>
         <nav>
         <ul className="header__list">
           

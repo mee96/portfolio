@@ -24,7 +24,7 @@ function App() {
         <Proyectos/>
         <Formacion/>
         <Contacto/>
-        <DarkmodeT onClick={handleClick} />
+        <DarkmodeT onClick={handleClick} currentMode={classMode} />
       </main>
     </div>
   );

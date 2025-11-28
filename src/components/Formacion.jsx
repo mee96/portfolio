@@ -1,21 +1,45 @@
 
+
 import { Element } from 'react-scroll';
 import "../scss/layout/Formacion.scss";
 import logo from "../images/Logo-adalab.png";
 
-
-
 function Formacion() {
+  const dataFormacion = {
+    titulacio: "Bootcamp Intensivo Full-Stack Web Developer",
+    institucio: "Adalab",
+    durada: "[Septiembre 2024] – [Diciembre2024]",
+    descripcio: "Formació pràctica i immersiva amb un enfocament en el cicle complet de desenvolupament web. Basat en projectes reals, treball en equip i metodologies àgils (Scrum).",
+    tecnologies: ["JavaScript ES6+", "React", "Node.js (APIs)", "SASS/CSS3", "Git", "SQL", "HTML5", "Metodologies Àgils (Scrum)", "JavaScript"],
+  };
+
   return (
     <Element name="formacion" className='formacion'>
-    
-    <h1>Formacion</h1>
-    <div className='formacion__div'>
-    <p>Sobre si conocía donaciones anónimas o no anónimas en efectivo al partido, JAMÁS, a propósito, no tocaré sanidad ni la educacióny ni a Hitler ni a Stalin les han nombrado personas non grata en Pontevedra, en conclusión, todo lo que se refiere a mí y que figura allí y a los compañeros de partido que figuran ahí, no es cierto, salvo alguna cosa que han publicado los medios, es el alcalde el que elige al alcalde y es el alcalde el que quiere que sean los vecinos el alcalde.</p>
-    <img className="formacion__logo" src={logo} alt="Logo Adalab" />
-    </div>
+      <h1>Formació</h1>
+      
+      <div className='formacion__div'>
+        
+        <div className='formacion__detalls'>
+            <h2>{dataFormacion.titulacio}</h2>
+            <p className='formacion__institucio'>{dataFormacion.institucio}</p>
+            <p className='formacion__durada'>{dataFormacion.durada}</p>
+            
+            <p className='formacion__descripcio'>{dataFormacion.descripcio}</p>
+            
+            <ul className='formacion__tecnologies-list'>
+                {dataFormacion.tecnologies.map((tech, index) => (
+                    <li key={index} className='tech-tag'>{tech}</li>
+                ))}
+            </ul>
+        </div>
+        
+        <div className='formacion__logo-container'>
+          <img className="formacion__logo" src={logo} alt={`Logo de ${dataFormacion.institucio}`} />
+        </div>
+        
+      </div>
     </Element>
   )
 }
 
-export default Formacion
+export default Formacion;
