@@ -1,4 +1,4 @@
-
+// src/scss/layout/SobreMi.scss
 
 @use '../core/variables' as v; 
 
@@ -8,13 +8,14 @@
     h1 {
         text-align: center;
         margin-bottom: 40px;
-        color: v.$color3;
+        
+        color: v.$color1; 
     }
 
     &__content-grid {
-        
+       
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr; 
         gap: 60px;
         max-width: 1200px;
         margin: 0 auto;
@@ -24,7 +25,7 @@
         background-color: transparent; 
     }
     
-    &__presentacio {
+    &__presentacion {
         h2 {
             color: v.$color2;
             margin-top: 0;
@@ -62,10 +63,37 @@
     }
 }
 
+.highlight {
+    font-weight: bold;
+}
+
+// dark mode
+.dark .sobre-mi {
+    
+    
+    h1 {
+        color: v.$color3; 
+    }
+    
+    &__presentacion h2 {
+        color: v.$color6; 
+    }
+
+    &__destacat {
+       
+        background-color: darken(v.$color1, 5%); 
+        
+        h3 {
+            color: v.$color3;
+            border-bottom-color: v.$color3;
+        }
+    }
+}
+
 
 @media (max-width: 900px) {
     .sobre-mi__content-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Posa una columna per a mòbils */
         gap: 40px;
         padding: 20px;
     }

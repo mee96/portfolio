@@ -1,4 +1,5 @@
 
+
 @use '../core/variables' as v; 
 
 .formacion {
@@ -53,7 +54,7 @@
         opacity: 0.8;
     }
     
-   
+    
     &__tecnologies-list {
         display: flex;
         flex-wrap: wrap;
@@ -72,7 +73,28 @@
     }
 }
 
-// 📱 Adaptació a Mòbil
+// dark mode
+.dark .formacion {
+    
+    
+    h1 {
+        color: v.$color3; 
+    }
+
+    &__div {
+        border-color: v.$color2;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    &__detalls {
+        h2 {
+            color: v.$color6;
+        }
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .formacion__div {
         flex-direction: column; 
@@ -83,4 +105,3 @@
         margin-bottom: 20px;
     }
 }
-
