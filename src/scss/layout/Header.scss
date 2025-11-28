@@ -17,7 +17,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     
     
-    /* Estils d'Escriptori */
+   
     &__name-link {
         text-decoration: none;
         cursor: pointer;
@@ -58,15 +58,13 @@
     }
 }
 
-// 🚨 AMAGAR BOTÓ D'HAMBURGUESA PER DEFECTE EN ESCRIPTORI
+
 .header__menu-toggle {
     display: none;
 }
 
 
-// ------------------------------------
-// ADAPTACIÓ AL DARK MODE (ESCRIPTORI I MÒBIL)
-// ------------------------------------
+
 .dark .header {
     background-color: v.$color1; 
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
@@ -85,42 +83,40 @@
     }
     
     .header__menu-toggle {
-        color: v.$color3; /* Color clar per al botó en mode fosc */
+        color: v.$color3; 
     }
     
     .header__nav {
-        background-color: v.$color1; /* Fons fosc per al menú desplegat en mode fosc */
+        background-color: v.$color1; 
     }
 }
 
 
-// ------------------------------------
-// MEDIA QUERY (Mòbil: Disseny d'Hamburguesa)
-// ------------------------------------
+
 @media (max-width: 850px) {
     .header {
         height: 60px;
         padding: 10px 20px;
         justify-content: space-between; 
         
-        /* CENTRAR EL NOM */
+       
         .header__name-link {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
         
-        /* AMAGAR I POSICIONAR LA NAV PER DEFECTE */
+        
         .header__nav {
             position: fixed; 
             top: 60px; 
             left: 0;
             width: 100%;
             height: calc(100% - 60px);
-            background-color: v.$color5; /* Fons clar del menú */
+            background-color: v.$color5;
             z-index: 90;
             transition: transform 0.3s ease-in-out;
-            transform: translateX(100%); /* Amagat: fora de pantalla a la dreta */
+            transform: translateX(100%);
             
             display: flex;
             flex-direction: column;
@@ -128,11 +124,11 @@
             align-items: center;
             
             &--open {
-                transform: translateX(0); /* Mostrar */
+                transform: translateX(0); 
             }
         }
         
-        /* ESTIL DE LA LLISTA DESPLEGABLE */
+       
         .header__list {
             flex-direction: column; 
             padding: 0;
@@ -144,12 +140,12 @@
                 
                 a {
                     font-size: 1.5rem;
-                    color: v.$color1; /* 🚨 Color FOSC per al text en mode CLAR */
+                    color: v.$color1; 
                 }
             }
         }
 
-        /* MOSTRAR EL BOTÓ D'HAMBURGUESA */
+        
         .header__menu-toggle {
             display: block; 
             background: none;
