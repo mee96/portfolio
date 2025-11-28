@@ -9,7 +9,7 @@ function SobreMi() {
         
         <div className="sobre-mi__content-grid">
             
-            {/* COLUMNA 1: NARRATIVA DE TRANSICIÓN */}
+            
             <div className='sobre-mi__presentacion'>
                 <h2>De la Precisión del Laboratorio a la Funcionalidad del Código.</h2>
                 
@@ -30,7 +30,7 @@ function SobreMi() {
             <div className='sobre-mi__destacado'>
                 <h3>Soft Skills y Valores</h3>
                 <ul className='sobre-mi__skills-list'>
-                    <li>🔬 <strong className="highlight">Análisis y Rigurosidad</strong> (De Laboratorio a Debugging)</li>
+                    <li>🔬 <strong className="highlight">Análisis y Rigurosidad</strong> </li>
                     <li>🤝 <strong className="highlight">Trabajo Colaborativo</strong></li>
                     <li>✨ <strong className="highlight">Atención al Detalle</strong></li>
                     <li>📈 <strong className="highlight">Aprendizaje Continuo</strong></li>
@@ -48,6 +48,6 @@ function SobreMi() {
         </div>
     </Element>
   )
-}   
+}  
 
 export default SobreMi;

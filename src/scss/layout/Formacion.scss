@@ -1,6 +1,4 @@
-// src/scss/layout/Formacion.scss
 
-// 🚨 Recorda importar les variables
 @use '../core/variables' as v; 
 
 .formacion {
@@ -9,12 +7,12 @@
     h1 {
         text-align: center;
         margin-bottom: 40px;
-        color: v.$color1; // Color fosc per als títols
+        color: v.$color1; 
     }
 
     &__div {
         display: flex;
-        flex-direction: row; // Disposició en fila per defecte
+        flex-direction: row; 
         align-items: center;
         justify-content: space-between;
         gap: 40px;
@@ -27,7 +25,7 @@
     }
 
     &__detalls {
-        flex: 3; // Ocupa més espai
+        flex: 3; 
         h2 {
             color: v.$color2;
             margin-top: 0;
@@ -45,7 +43,7 @@
     }
 
     &__logo-container {
-        flex: 1; // Ocupa menys espai
+        flex: 1;
         text-align: center;
     }
     
@@ -55,7 +53,7 @@
         opacity: 0.8;
     }
     
-    // Estils de les etiquetes de tecnologia (reutilitza si ja les tenies)
+   
     &__tecnologies-list {
         display: flex;
         flex-wrap: wrap;

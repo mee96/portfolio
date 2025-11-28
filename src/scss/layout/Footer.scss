@@ -1,0 +1,51 @@
+// src/scss/layout/Footer.scss
+
+@use '../core/variables' as v;
+
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid v.$color2; 
+    transition: background-color 0.3s, color 0.3s;
+    
+    // Estilos por defecto (Modo Claro)
+    background-color: v.$color3; 
+    color: v.$color1; 
+
+    &__social {
+        margin-bottom: 15px;
+        
+        a {
+            font-size: 1.8rem;
+            margin: 0 15px;
+            color: v.$color2; 
+            transition: color 0.2s ease;
+            
+            &:hover {
+                color: v.$color6; /* Color de resaltado al pasar el ratón */
+            }
+        }
+    }
+    
+    &__copy, &__thanks {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+}
+
+// ------------------------------------
+// Estilos para el Modo Oscuro
+// ------------------------------------
+.dark .footer {
+    background-color: v.$color1; 
+    color: v.$color3; 
+    border-top: 1px solid v.$color2; 
+
+    .footer__social a {
+        color: v.$color6; /* Iconos claros en modo oscuro */
+        
+        &:hover {
+            color: v.$color5;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import logoPortf from "../images/pusheen-laptop.gif";
+
 import "../scss/layout/Header.scss";
 import { Link } from 'react-scroll';
 
@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
         
-        <img className="header__logo" src={logoPortf} alt="imagen pusheen" />
+        
         <h1>Carme Medina</h1>
         <nav>
         <ul className="header__list">

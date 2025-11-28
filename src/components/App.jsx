@@ -7,6 +7,7 @@ import Formacion from "./Formacion";
 import Contacto from "./Contacto"
 import Home from "./Home";
 import DarkmodeT from "./DarkmodeT";
+import Footer from "./Footer";
 import { useState } from "react";
 function App() {
   const [mode, setMode] = useState(true); // true = light, false = dark
@@ -24,6 +25,7 @@ function App() {
         <Proyectos/>
         <Formacion/>
         <Contacto/>
+        <Footer />
         <DarkmodeT onClick={handleClick} currentMode={classMode} />
       </main>
     </div>
