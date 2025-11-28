@@ -22,7 +22,7 @@ function Footer() {
             </p>
             
             <p className="footer__thanks">
-                ¡Gracias por visitar mi portfolio! Hecho con ❤️ y React
+                ¡Gracias por visitar mi portfolio! Hecho con ♥ y React
             </p>
         </footer>
     );
