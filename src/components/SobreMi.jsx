@@ -11,7 +11,7 @@ function SobreMi() {
             
             
             <div className='sobre-mi__presentacion'>
-                <h2>De la Precisión del Laboratorio a la Funcionalidad del Código.</h2>
+                <h2>De la Precisión del Laboratorio a la Funcionalidad del Código</h2>
                 
                 <p>
                     Soy una desarrolladora Full-Stack especializada en la creación de interfaces de usuario robustas con <strong className="highlight">React</strong> y APIs eficientes con <strong className="highlight">Node.js</strong>. Tras completar el intensivo Bootcamp de Adalab, estoy lista para aplicar mis habilidades en un entorno profesional.

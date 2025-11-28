@@ -11,7 +11,7 @@ function Footer() {
                 <a href="https://www.linkedin.com/in/carme-medina-canalda-250457132/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de [Tu Nombre]">
                     <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/mee96" target="_blank" rel="noopener noreferrer" aria-label="GitHub de [Tu Nombre]">
+                <a href="https://github.com/mee96" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Carme">
                     <i className="fab fa-github"></i>
                 </a>
                 

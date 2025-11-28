@@ -1,4 +1,4 @@
-// Home.jsx (Final)
+
 
 import logo from "../images/pusheen-gaming-me-as-fweak.gif";
 import "../scss/layout/Home.scss";
