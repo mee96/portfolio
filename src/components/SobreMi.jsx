@@ -30,11 +30,12 @@ function SobreMi() {
             <div className='sobre-mi__destacado'>
                 <h3>Soft Skills y Valores</h3>
                 <ul className='sobre-mi__skills-list'>
-                    <li>🔬 <strong className="highlight">Análisis y Rigurosidad</strong> </li>
-                    <li>🤝 <strong className="highlight">Trabajo Colaborativo</strong></li>
-                    <li>✨ <strong className="highlight">Atención al Detalle</strong></li>
-                    <li>📈 <strong className="highlight">Aprendizaje Continuo</strong></li>
-                    <li>💡 <strong className="highlight">Creatividad e Innovación</strong></li>
+                    <li>🔬 Análisis y Rigurosidad</li>
+                    <li>🤝 Trabajo Colaborativo</li>
+                    <li>✨ Atención al Detalle</li>
+                    <li>📈 Aprendizaje Continuo</li>
+                    <li>💡 Creatividad e Innovación</li>
+
                 </ul>
 
                 <hr/>

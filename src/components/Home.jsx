@@ -6,17 +6,17 @@ import { Element, Link } from 'react-scroll';
 
 function Home() {
   return (
-    // Assegurem que l'Element "home" estigui present per a la navegació
+    
     <Element name="home" className="home"> 
       
       <div className="home__presentation">
         
-        {/* 🚨 Utilitzem només un <h1> com a benvinguda per mantenir la jerarquia */}
+        
         <h1 className="home__title">
             Hola! Benvinguts al meu portfoli 😊
         </h1>
         
-        {/* 🚨 EL TEU TEXT INTRODUCTORI ORIGINAL */}
+        
         <p className="home__intro-text">
             Sóc Carmee, desenvolupadora full-stack amb una gran passió per la tecnologia i la creativitat. Aquest lloc és un espai on comparteixo els meus projectes i tot allò que em motiva a seguir aprenent i creixent en el món de la programació. El meu objectiu és mostrar-te el que sóc capaç de fer i, a través dels meus projectes, transmetre la innovació i el detall que em caracteritzen. Espero que gaudeixis explorant el meu treball!
         </p>
