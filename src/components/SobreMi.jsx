@@ -1,4 +1,3 @@
-// SobreMi.jsx (Codi Final amb Negreta Correcta)
 
 import { Element } from 'react-scroll';
 import "../scss/layout/SobreMi.scss";
