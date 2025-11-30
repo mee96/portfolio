@@ -1,1 +1,31 @@
-{}
+{
+  "nav": {
+    "about": "About Me",
+    "projects": "Projects",
+    "training": "Education",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi! Welcome to my portfolio 😊",
+    "description": "I'm Carmee, a full-stack developer with a strong passion for technology and creativity. This place is where I share my projects and everything that motivates me to keep learning and growing in the world of programming. My goal is to show you what I’m capable of and, through my projects, convey the innovation and attention to detail that define me. I hope you enjoy exploring my work!",
+    "cta": "Explore my projects",
+    "alt": "Pusheen cat gaming"
+  },
+   "sobreMi": {
+    "title": "About Me",
+    "subtitle": "From Laboratory Precision to Code Functionality",
+    "paragraph1": "I'm a Full-Stack developer specialized in building robust user interfaces with <strong class='highlight'>React</strong> and efficient APIs with <strong class='highlight'>Node.js</strong>. After completing the intensive Adalab Bootcamp, I am ready to apply my skills in a professional environment.",
+    "paragraph2": "My previous experience as a <strong class='highlight'>Laboratory Technician</strong> provided me with invaluable foundations in <strong class='highlight'>methodology, thorough analysis, and rigor</strong>, skills I now directly apply to debugging code and project architecture. This career change is driven by my passion for <strong class='highlight'>solving complex problems</strong> and the <strong class='highlight'>functional creativity</strong> that web development offers.",
+    "paragraph3": "I’m looking for a team that values <strong class='highlight'>precision</strong> and <strong class='highlight'>adaptability</strong>. My goal is to contribute to projects that make a difference.",
+    "softSkillsTitle": "Soft Skills & Values",
+    "skills": [
+      "🔬 Analysis and Rigor",
+      "🤝 Collaborative Work",
+      "✨ Attention to Detail",
+      "📈 Continuous Learning",
+      "💡 Creativity & Innovation"
+    ],
+    "personalInterestsTitle": "Personal Interests",
+    "personalInterests": "When I’m not coding, I keep my mind active with my hobbies: watching anime, playing video games, and dancing. I also go to the gym every day, a place where, curiously, unexpected coding solutions often come to mind!"
+  }
+}

@@ -1,9 +1,20 @@
 @import '../core/variables';
 
-.fixed-toggle {
+.fixed-panel {
   position: fixed;
   top: 70px;
   right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  z-index: 200;
+}
+
+/* Botó de lluna */
+.toggle-darkmode {
   width: 50px;
   height: 50px;
   font-size: 24px;
@@ -11,11 +22,47 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 100;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
-    
+  }
+}
+
+/* Botó idioma */
+.lang-toggle {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Desplegable */
+.lang-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--color-background);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    padding: 4px 0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

@@ -1,1 +1,31 @@
-{}
+{
+  "nav": {
+    "about": "Sobre mi",
+    "projects": "Projectes",
+    "training": "Formació",
+    "contact": "Contacte"
+  },
+  "home": {
+    "title": "Hola! Benvinguts al meu portfoli 😊",
+    "description": "Sóc Carmee, desenvolupadora full-stack amb una gran passió per la tecnologia i la creativitat. Aquest lloc és un espai on comparteixo els meus projectes i tot allò que em motiva a seguir aprenent i creixent en el món de la programació. El meu objectiu és mostrar-te el que sóc capaç de fer i, a través dels meus projectes, transmetre la innovació i el detall que em caracteritzen. Espero que gaudeixis explorant el meu treball!",
+    "cta": "Explora els meus projectes",
+    "alt": "Gat Pusheen jugant"
+  },
+  "sobreMi": {
+    "title": "Sobre Mí",
+    "subtitle": "De la precisió del laboratori a la funcionalitat del codi",
+    "paragraph1": "Sóc una desenvolupadora Full-Stack especialitzada en la creació d'interfícies d'usuari robustes amb <strong class='highlight'>React</strong> i APIs eficients amb <strong class='highlight'>Node.js</strong>. Després de completar l'intensiu Bootcamp d'Adalab, estic preparada per aplicar les meves habilitats en un entorn professional.",
+    "paragraph2": "La meva trajectòria prèvia com a <strong class='highlight'>Tècnic de Laboratori</strong> em va proporcionar una base inestimable en <strong class='highlight'>metodologia, anàlisi exhaustiu i rigor</strong>, habilitats que ara aplico directament a la depuració de codi i a l'arquitectura de projectes. Aquest canvi de sector està impulsat per la meva passió per la <strong class='highlight'>resolució de problemes complexos</strong> i la <strong class='highlight'>creativitat funcional</strong> que ofereix el desenvolupament web.",
+    "paragraph3": "Busco un equip que valori la <strong class='highlight'>precisió</strong> i la <strong class='highlight'>capacitat d'adaptació</strong>. El meu objectiu és contribuir a projectes que marquin la diferència.",
+    "softSkillsTitle": "Soft Skills i Valors",
+    "skills": [
+      "🔬 Anàlisi i Rigor",
+      "🤝 Treball Col·laboratiu",
+      "✨ Atenció al Detall",
+      "📈 Aprenentatge Continu",
+      "💡 Creativitat i Innovació"
+    ],
+    "personalInterestsTitle": "Interessos Personals",
+    "personalInterests": "Quan no estic programant, mantinc la meva ment activa amb els meus hobbies: veure anime, jugar a videojocs i ballar. A més, visito el gimnàs cada dia, un lloc on curiosament sovint se m'acudeixen solucions de codi inesperades!"
+  }
+}

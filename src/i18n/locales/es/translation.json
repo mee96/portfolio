@@ -1,1 +1,31 @@
-{}
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "training": "Formación",
+    "contact": "Contacto"
+  },
+   "home": {
+    "title": "¡Hola! Bienvenidos a mi portfolio 😊",
+    "description": "Soy Carmee, desarrolladora full-stack con una gran pasión por la tecnología y la creatividad. Este lugar es un espacio donde comparto mis proyectos y todo aquello que me motiva a seguir aprendiendo y creciendo en el mundo de la programación. Mi objetivo es mostrarte lo que soy capaz de hacer y, a través de mis proyectos, transmitir la innovación y el detalle que me caracterizan. ¡Espero que disfrutes explorando mi trabajo!",
+    "cta": "Explora mis proyectos",
+    "alt": "Gato Pusheen jugando"
+  },
+  "sobreMi": {
+    "title": "Sobre Mí",
+    "subtitle": "De la precisión del laboratorio a la funcionalidad del código",
+    "paragraph1": "Soy una desarrolladora Full-Stack especializada en la creación de interfaces de usuario robustas con <strong class='highlight'>React</strong> y APIs eficientes con <strong class='highlight'>Node.js</strong>. Tras completar el intensivo Bootcamp de Adalab, estoy lista para aplicar mis habilidades en un entorno profesional.",
+    "paragraph2": "Mi trayectoria previa como <strong class='highlight'>Técnico de Laboratorio</strong> me proporcionó una base inestimable en <strong class='highlight'>metodología, análisis exhaustivo y rigurosidad</strong>, habilidades que ahora aplico directamente a la depuración de código y la arquitectura de proyectos. Este cambio de sector está impulsado por mi pasión por la <strong class='highlight'>resolución de problemas complejos</strong> y la <strong class='highlight'>creatividad funcional</strong> que ofrece el desarrollo web.",
+    "paragraph3": "Busco un equipo que valore la <strong class='highlight'>precisión</strong> y la <strong class='highlight'>capacidad de adaptación</strong>. Mi objetivo es contribuir a proyectos que marquen la diferencia.",
+    "softSkillsTitle": "Soft Skills y Valores",
+    "skills": [
+      "🔬 Análisis y Rigurosidad",
+      "🤝 Trabajo Colaborativo",
+      "✨ Atención al Detalle",
+      "📈 Aprendizaje Continuo",
+      "💡 Creatividad e Innovación"
+    ],
+    "personalInterestsTitle": "Intereses Personales",
+    "personalInterests": "Cuando no estoy programando, mantengo mi mente activa con mis hobbies: ver anime, jugar a videojuegos y bailar. Además, visito el gimnasio cada día, un lugar donde curiosamente, a menudo se me ocurren soluciones de código inesperadas!"
+  }
+}
