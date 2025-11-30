@@ -13,6 +13,10 @@ function Header() {
         setIsOpen(!isOpen);
     };
 
+    const handleLanguageChange = (event) => {
+        i18n.changeLanguage(event.target.value);
+    };
+    
     return (
         <header className="header">
             
@@ -21,6 +25,7 @@ function Header() {
                 
                 <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i> 
             </button>
+            
 
             
             <Link 
