@@ -19,14 +19,7 @@ function Home() {
           {t("home.description")}
         </p>
 
-        <Link
-          to="proyectos"
-          smooth={true}
-          duration={500}
-          className="home__cta-button"
-        >
-          {t("home.cta")}
-        </Link>
+        
       </div>
 
       <div className="home__logo-container">
