@@ -11,7 +11,6 @@ gap: 12px;
 z-index: 200;
 }
 
-/* Botó de lluna */
 .toggle-darkmode {
 width: 50px;
 height: 50px;
@@ -27,7 +26,6 @@ transform: scale(1.1);
 }
 }
 
-/* Botó idioma */
 .lang-toggle {
 background: transparent;
 border: none;
@@ -41,12 +39,10 @@ transform: scale(1.1);
 }
 }
 
-/* Desplegable idioma */
 .lang-dropdown {
 display: flex;
 flex-direction: column;
 gap: 4px;
-background: var(--color-background);
 padding: 8px 12px;
 border-radius: 8px;
 box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -67,14 +63,12 @@ padding: 4px 0;
 }
 }
 
-/* ---------------------------------------------------------------- */
-/* AJUST PER A MÒBIL (max-width: 768px) */
-/* ---------------------------------------------------------------- */
+
 @media (max-width: 850px) {
 .fixed-panel {
-top: 10px;         /* A prop de la part superior */
-right: 10px;       /* A l'extrem dret */
-flex-direction: row; /* Botons en fila */
+top: 10px;
+right: 10px;
+flex-direction: row;
 gap: 10px;
 margin: 0;
 padding: 0;
@@ -94,10 +88,23 @@ padding: 0 5px;
 
 .lang-dropdown {
 position: absolute;
-top: 45px;  /* Sota els botons */
+top: 45px;
 right: 0;
 width: auto;
 min-width: 80px;
 z-index: 300;
+backdrop-filter: blur(5px);
+
+
+/* Fons segons mode només en mòbil */
+.light & {
+  background: $color3;
+}
+
+.dark & {
+  background: $color1;
+}
+
+
 }
 }
