@@ -13,7 +13,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // Indica que ha de començar a buscar les importacions des de 'src/'
-        includePaths: ['src/'] 
+        includePaths: ['src/scss'] 
       }
     }
     }
