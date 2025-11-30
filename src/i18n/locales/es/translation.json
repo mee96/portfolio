@@ -27,5 +27,46 @@
     ],
     "personalInterestsTitle": "Intereses Personales",
     "personalInterests": "Cuando no estoy programando, mantengo mi mente activa con mis hobbies: ver anime, jugar a videojuegos y bailar. Además, visito el gimnasio cada día, un lugar donde curiosamente, a menudo se me ocurren soluciones de código inesperadas!"
-  }
+  },
+  "projects": {
+    "title": "Mis proyectos",
+    "demo": "Demo",
+    "purrSkills": {
+      "title": "Purr Skills",
+      "description": "Generador de fichas de personaje para juegos de rol, con funciones dinámicas de cálculo de puntos. Proyecto realizado en equipo, donde asumí liderazgo y diseño."
+    },
+    "rickMortyApi": {
+      "title": "Rick & Morty API Search",
+      "description": "Aplicación personal para la búsqueda y filtrado de personajes de la serie, utilizando una API pública. Demuestra manejo de datos asíncronos y gestión del estado con Hooks."
+    },
+    "animeApiBackend": {
+      "title": "API Anime (Backend)",
+      "description": "Proyecto de backend implementando una base de datos con animes y sus personajes. Demuestra conocimiento de arquitectura MERN/MEVN (según tecnologías utilizadas) y gestión de CRUD."
+    }
+  },
+  "formacion": {
+  "title": "Formación",
+  "titulacio": "Bootcamp Intensivo Full-Stack Web Developer",
+  "institucio": "Adalab",
+  "durada": "[Septiembre 2024] – [Diciembre 2024]",
+  "descripcio": "Formación práctica e inmersiva con un enfoque en el ciclo completo de desarrollo web. Basado en proyectos reales, trabajo en equipo y metodologías ágiles (Scrum).",
+  "tecnologies": ["JavaScript ES6+", "React", "Node.js (APIs)", "SASS/CSS3", "Git", "SQL", "HTML5", "Metodologías Ágiles (Scrum)", "JavaScript"]
+},
+"contacto": {
+  "title": "Contacto",
+  "name": "Nombre",
+  "namePlaceholder": "Tu nombre",
+  "email": "Email",
+  "emailPlaceholder": "Tu correo",
+  "message": "Mensaje",
+  "messagePlaceholder": "Tu mensaje",
+  "send": "Enviar",
+  "success": "¡Mensaje enviado con éxito!",
+  "error": "Ha habido un error, vuelve a intentarlo."
+},
+"footer": {
+  
+  "role": "Desarrolladora Full-Stack",
+  "thanks": "¡Gracias por visitar mi portfolio! Hecho con ♥ y React"
+}
 }

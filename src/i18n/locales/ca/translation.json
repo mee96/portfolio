@@ -27,5 +27,46 @@
     ],
     "personalInterestsTitle": "Interessos Personals",
     "personalInterests": "Quan no estic programant, mantinc la meva ment activa amb els meus hobbies: veure anime, jugar a videojocs i ballar. A més, visito el gimnàs cada dia, un lloc on curiosament sovint se m'acudeixen solucions de codi inesperades!"
-  }
+  },
+  "projects": {
+    "title": "Els meus projectes",
+    "demo": "Demo",
+    "purrSkills": {
+      "title": "Purr Skills",
+      "description": "Generador de fitxes de personatge per a jocs de ROL, amb funcions dinàmiques de càlcul de punts. Projecte realitzat en equip, on vaig assumir el lideratge i disseny."
+    },
+    "rickMortyApi": {
+      "title": "Rick & Morty API Search",
+      "description": "Aplicació personal per a la cerca i el filtratge de personatges de la sèrie, utilitzant una API pública. Demostra el maneig de dades asíncrones i la gestió de l'estat amb Hooks."
+    },
+    "animeApiBackend": {
+      "title": "API Anime (Backend)",
+      "description": "Projecte de backend implementant una base de dades amb animes i els seus personatges. Demostra coneixement d'arquitectura MERN/MEVN (segons les tecnologies utilitzades) i gestió de CRUD."
+    }
+  },
+  "formacion": {
+  "title": "Formació",
+  "titulacio": "Bootcamp Intensiu Full-Stack Web Developer",
+  "institucio": "Adalab",
+  "durada": "[Setembre 2024] – [Desembre 2024]",
+  "descripcio": "Formació pràctica i immersiva amb un enfocament en el cicle complet de desenvolupament web. Basat en projectes reals, treball en equip i metodologies àgils (Scrum).",
+  "tecnologies": ["JavaScript ES6+", "React", "Node.js (APIs)", "SASS/CSS3", "Git", "SQL", "HTML5", "Metodologies Àgils (Scrum)", "JavaScript"]
+},
+"contacto": {
+  "title": "Contacte",
+  "name": "Nom",
+  "namePlaceholder": "El teu nom",
+  "email": "Email",
+  "emailPlaceholder": "El teu correu",
+  "message": "Missatge",
+  "messagePlaceholder": "El teu missatge",
+  "send": "Enviar",
+  "success": "Missatge enviat amb èxit!",
+  "error": "Hi ha hagut un error, torna-ho a intentar."
+},
+"footer": {
+  
+  "role": "Desenvolupadora Full-Stack",
+  "thanks": "Gràcies per visitar el meu portfolio! Fet amb ♥ i React"
+}
 }

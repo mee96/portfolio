@@ -2,29 +2,31 @@ import React, { useRef } from "react";
 import "../scss/layout/Contacto.scss";
 import emailjs from "emailjs-com";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const form = useRef();
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-    .sendForm(
-      "service_glru0e4",    // 1r PARÀMETRE: Service ID
-      "template_h87vyeu",   // 2n PARÀMETRE: Template ID
-      form.current,         // 3r PARÀMETRE: Element del Formulari
-      "IUoucQHvxE-yOVvhp"   // 4t PARÀMETRE: User ID (Public Key)
-    )
-    .then(
+      .sendForm(
+        "service_glru0e4",
+        "template_h87vyeu",
+        form.current,
+        "IUoucQHvxE-yOVvhp"
+      )
+      .then(
         (result) => {
-          alert("Mensaje enviado con éxito!");
+          alert(t("contacto.success"));
         },
         (error) => {
-          alert("Ha habido un error, vuelve a intentarlo.");
+          alert(t("contacto.error"));
         }
       );
 
-    e.target.reset(); // Neteja el formulari després d'enviar-lo
+    e.target.reset();
   };
 
   return (
@@ -32,15 +34,18 @@ const ContactForm = () => {
       <Element name="contacto" />
       
       <div className="contact">
-      <h2>Contacto</h2>
+        <h2>{t("contacto.title")}</h2>
         <form ref={form} onSubmit={sendEmail} className="contact__form">
-          <label>Nom</label>
-          <input type="text" name="name" placeholder="Tu nombre" required />
-          <label>Email</label>
-          <input type="email" name="email" placeholder="Tu correo" required />
-          <label>Mensaje</label>
-          <textarea name="message" placeholder="Tu mensaje" required />
-          <button className="button" type="submit">Enviar</button>
+          <label>{t("contacto.name")}</label>
+          <input type="text" name="name" placeholder={t("contacto.namePlaceholder")} required />
+          
+          <label>{t("contacto.email")}</label>
+          <input type="email" name="email" placeholder={t("contacto.emailPlaceholder")} required />
+          
+          <label>{t("contacto.message")}</label>
+          <textarea name="message" placeholder={t("contacto.messagePlaceholder")} required />
+          
+          <button className="button" type="submit">{t("contacto.send")}</button>
         </form>
       </div>
     </>

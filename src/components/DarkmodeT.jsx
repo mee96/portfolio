@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const languages = [
   { code: 'ca', label: 'CAT' },
-  { code: 'es', label: 'CAST' },
+  { code: 'es', label: 'ES' },
   { code: 'en', label: 'ENG' },
 ];
 
@@ -17,7 +17,7 @@ const DarkmodeT = ({ onClick }) => {
 
   const activeLang = languages.find(lang => lang.code === i18n.language) || languages[0];
 
-  // Tanquem el desplegable si fem click fora
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -38,12 +38,12 @@ const DarkmodeT = ({ onClick }) => {
         <FontAwesomeIcon icon={faMoon} />
       </span>
 
-      {/* Botó idioma actual */}
+      
       <button className="lang-toggle" onClick={() => setOpen(!open)}>
         {activeLang.label}
       </button>
 
-      {/* Desplegable */}
+      
       {open && (
         <div className="lang-dropdown">
           {languages.map(lang => (

@@ -1,21 +1,16 @@
-
-
 import { Element } from 'react-scroll';
 import "../scss/layout/Formacion.scss";
 import logo from "../images/Logo-adalab.png";
+import { useTranslation } from 'react-i18next';
 
 function Formacion() {
-  const dataFormacion = {
-    titulacio: "Bootcamp Intensivo Full-Stack Web Developer",
-    institucio: "Adalab",
-    durada: "[Septiembre 2024] – [Diciembre2024]",
-    descripcio: "Formació pràctica i immersiva amb un enfocament en el cicle complet de desenvolupament web. Basat en projectes reals, treball en equip i metodologies àgils (Scrum).",
-    tecnologies: ["JavaScript ES6+", "React", "Node.js (APIs)", "SASS/CSS3", "Git", "SQL", "HTML5", "Metodologies Àgils (Scrum)", "JavaScript"],
-  };
+  const { t } = useTranslation();
+
+  const dataFormacion = t("formacion", { returnObjects: true });
 
   return (
     <Element name="formacion" className='formacion'>
-      <h1>Formació</h1>
+      <h1>{dataFormacion.title}</h1>
       
       <div className='formacion__div'>
         
