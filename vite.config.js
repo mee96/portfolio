@@ -8,5 +8,13 @@ export default defineConfig({
     watch: {
       usePolling: true
     }
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Indica que ha de començar a buscar les importacions des de 'src/'
+        includePaths: ['src/'] 
+      }
+    }
+    }
 })
