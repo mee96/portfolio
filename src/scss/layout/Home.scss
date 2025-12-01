@@ -1,99 +1,108 @@
-
-
 @use '../core/variables' as v;
 
 .home {
    
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding: 30px;
-    gap: 50px;
-    width: 100vw; 
+    margin-top: 30px;
+    padding: 20px;
+    gap: 24px;
+    width: 100%; 
 
     &__presentation {
-        max-width: 65%; 
+        /* centrar contingut dins aquest bloc */
+        max-width: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
     }
 
-   
-    
     &__logo {
-        max-width: 400px; 
-        width: 100%; 
-        height: auto; 
+        /* fer que img es comporti com a bloc per a que margin:auto funcioni */
+        display: block;
+        margin: 0 auto;
         transform: rotate(-90deg);
+        transform-origin: center;
+        max-width: 360px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
     
+    // &__title {
+    // //    margin-bottom: 35px;
+    // }
 }
 
-// ...existing code...
 .home__content {
-    width: 100%;
-    // max-width: 1100px; /* ajusta per coincidir amb la resta del lloc */
-    margin: 0 auto;    /* centra el contenidor dins .home */
+    width: 80%;
+    /* si vols usar % pur, deixa-ho així; si vols límit, usa min()/max() */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 0 20px;   /* gutters igual que la resta */
+    gap: 1rem;
     box-sizing: border-box;
 }
 
 /* adaptar al mòbil: passa a column i centra */
-@media (max-width: 900px) {
-    .home__content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 16px;
-    }
+// @media (max-width: 900px) {
+//     .home__content {
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+//         padding: 0 16px;
+//     }
 
-    .home__presentation {
-        max-width: 100%;
-    }
+//     .home__presentation {
+//         max-width: 100%;
+//     }
 
-    .home__logo-container {
-        max-width: 250px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+//     .home__logo-container {
+//         max-width: 250px;
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//     }
 
-    .home__logo {
-        transform: rotate(-90deg);
-        transform-origin: center;
-        max-width: 60%;
-    }
-}
+//     .home__logo {
+//         transform: rotate(-90deg);
+//         transform-origin: center;
+//         max-width: 60%;
+//     }
+// }
 
 
-@media (max-width: 900px) {
-    .home {
+// @media (max-width: 900px) {
+//     .home {
        
-        flex-direction: column; 
-        margin-top: 20px;
-        padding: 20px ;
-        gap: 30px; 
-        align-items: center;
+//         flex-direction: column; 
+//         margin-top: 20px;
+//         padding: 20px ;
+//         gap: 30px; 
+//         align-items: center;
         
-        &__presentation {
+//         &__presentation {
             
-            max-width: 100%;
-            text-align: center; 
-        }
+//             max-width: 100%;
+//             text-align: center; 
+//         }
 
-        &__logo-container {
+//         &__logo-container {
             
-             max-width: 250px;
-        }
+//              max-width: 250px;
+//         }
 
-        &__logo {
+//         &__logo {
            
-            height: auto; 
-            max-width: 100%; 
-        }
-    }
-}
+//             height: auto; 
+//             max-width: 100%; 
+//         }
+//     }
+// }
