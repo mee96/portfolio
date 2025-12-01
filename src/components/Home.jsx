@@ -1,4 +1,4 @@
-import logo from "../images/pusheen-gaming-me-as-fweak.gif";
+import logo from "../images/image-portfolio.jpeg";
 import "../scss/layout/Home.scss";
 import { Element, Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +8,8 @@ function Home() {
 
   return (
     <Element name="home" className="home">
-      
+      <div className="home__content">
+
       <div className="home__presentation">
 
         <h1 className="home__title">
@@ -26,6 +27,7 @@ function Home() {
         <img className="home__logo" src={logo} alt={t("home.alt")} />
       </div>
 
+      </div>
     </Element>
   );
 }
