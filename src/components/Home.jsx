@@ -23,8 +23,7 @@ function Home() {
 
         
 
-      {/* <div className="home__logo-container"> */}
-      {/* </div> */}
+      
       </div>
 
       </div>
