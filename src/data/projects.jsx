@@ -2,8 +2,8 @@ const projectesData = [
     {
         id: 1,
         key: "purrSkills",
-        linkDemo: "https://github.com/ANGELACAMU/project-promo-A-module-2-team-1", 
-        linkGithub: "https://angelacamu.github.io/project-promo-A-module-2-team-1/" 
+        linkDemo: "https://angelacamu.github.io/project-promo-A-module-2-team-1/", 
+        linkGithub: "https://github.com/ANGELACAMU/project-promo-A-module-2-team-1" 
     },
     {
         id: 2,
@@ -20,4 +20,5 @@ const projectesData = [
 ];
 
 export default projectesData;
+
 
