@@ -2,36 +2,42 @@
 
 .home {
    
-    // display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     padding: 20px;
-    gap: 24px;
+   // gap: 24px;
     width: 100%; 
 
+    &__title {
+        margin: 0;
+    }
+
     &__presentation {
-        /* centrar contingut dins aquest bloc */
+        
         max-width: 65%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 40px;
 
     }
 
     &__logo {
-        /* fer que img es comporti com a bloc per a que margin:auto funcioni */
+        
         display: block;
         margin: 0 auto;
-        transform: rotate(-90deg);
+    
         transform-origin: center;
-        max-width: 360px;
+        max-width: 500px;
         width: auto;
         height: auto;
         object-fit: contain;
+        border-radius: 8px;
     }
     
     &__content {
@@ -41,8 +47,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: flex-start;
+    gap: 120px;
     box-sizing: border-box;
 }
 }
@@ -51,31 +57,28 @@
 
 @media (max-width: 900px) {
     .home {
-        /* Aplica un padding lateral més generós per crear el 'marge' a la pàgina */
+        
         padding: 40px 20px; 
         margin-top: 20px;
         gap: 30px; 
         
-        /* El contenidor extern ja no es centra, ja que volem que les vores arribin a les vores de la pantalla */
-        
+       
         &__content {
-            // El contingut intern ha d'omplir l'espai que li queda (100% menys el padding de .home)
+            
             width: 100%;
             gap: 30px; 
         }
 
         &__presentation {
-            max-width: 100%; /* Ocupa tot l'espai disponible */
+            max-width: 100%; 
             text-align: center; 
         }
 
         &__logo {
-            /* AJUST DE MIDA PER IMATGE ROTADA EN MÒBIL */
-            
-            // Limitació d'amplada (que amb la rotació és l'alçada visual)
+           
             max-height: 250px; 
             
-            // Limitem l'amplada real per evitar que la imatge rotada es projecti fora
+           
             max-width: 100%;
             
             height: auto; 
@@ -83,3 +86,5 @@
         }
     }
 }
+
+

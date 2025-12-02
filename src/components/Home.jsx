@@ -20,9 +20,6 @@ function Home() {
         <p className="home__intro-text">
           {t("home.description")}
         </p>
-
-        
-
       
       </div>
 
