@@ -2,7 +2,7 @@ const projectesData = [
     {
         id: 1,
         key: "purrSkills",
-        linkDemo: "https://angelacamu.github.io/project-promo-A-module-2-team-1/", 
+        linkDemo: "https://github.com/ANGELACAMU/project-promo-A-module-2-team-1", 
         linkGithub: "https://angelacamu.github.io/project-promo-A-module-2-team-1/" 
     },
     {
@@ -14,7 +14,7 @@ const projectesData = [
     {
         id: 3,
         key: "animeApiBackend",
-        linkDemo: "#",
+        linkDemo: "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-mee96",
         linkGithub: "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-mee96" 
     }
 ];
