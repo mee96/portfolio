@@ -15,7 +15,7 @@ function Home() {
         <h1 className="home__title">
           {t("home.title")}
         </h1>
-        <img className="home__logo" src={logo} alt={t("home.alt")} />
+        <img className="home__logo" src={logo} alt="me, hello im carme" />
 
         <p className="home__intro-text">
           {t("home.description")}

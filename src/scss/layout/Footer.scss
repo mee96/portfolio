@@ -8,7 +8,7 @@
     border-top: 1px solid v.$color2; 
     transition: background-color 0.3s, color 0.3s;
     
-    // Estilos por defecto (Modo Claro)
+   
     background-color: v.$color3; 
     color: v.$color1; 
 
@@ -22,7 +22,7 @@
             transition: color 0.2s ease;
             
             &:hover {
-                color: v.$color6; /* Color de resaltado al pasar el ratón */
+                color: v.$color6; 
             }
         }
     }
@@ -33,16 +33,14 @@
     }
 }
 
-// ------------------------------------
-// Estilos para el Modo Oscuro
-// ------------------------------------
+
 .dark .footer {
     background-color: v.$color1; 
     color: v.$color3; 
     border-top: 1px solid v.$color2; 
 
     .footer__social a {
-        color: v.$color6; /* Iconos claros en modo oscuro */
+        color: v.$color6; 
         
         &:hover {
             color: v.$color5;
