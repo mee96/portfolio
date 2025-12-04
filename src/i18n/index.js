@@ -25,8 +25,8 @@ i18n
     },
     
     
-    lng: "ca", 
-    fallbackLng: "en", 
+    lng: "en", 
+    fallbackLng: "ca", 
     debug: false, 
     
     interpolation: {
